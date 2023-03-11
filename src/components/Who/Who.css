@@ -1,0 +1,72 @@
+.container_who {
+  height: 100vh;
+  scroll-snap-align: center;
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+}
+.who {
+  height: 100vh;
+  scroll-snap-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.who .left {
+  flex: 2;
+}
+
+.who .rigth {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.who .rigth h1 {
+  font-size: 74px;
+}
+
+.who .rigth button {
+  width: 120px;
+  font-weight: 500;
+  padding: 10px;
+  background-color: #da4ea2;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.whatwedo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.whatwedo img {
+  height: 5px;
+}
+
+.whatwedo h2 {
+  color: #da4ea2;
+}
+
+.description {
+  font-size: 24px;
+  color: lightgray;
+}
+
+@media only screen and (max-width: 768px) {
+  .who .left{
+    display: none;
+  }
+  .who .rigth{
+    align-items: center;
+    text-align: center;
+  }
+  .who .rigth h1{
+    font-size: 60px;
+  }
+}

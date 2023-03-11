@@ -1,0 +1,133 @@
+.container_works {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.works {
+  height: 100vh;
+  scroll-snap-align: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  color: black;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.works .left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.works .left ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.works .left li {
+  font-size: 90px;
+  font-weight: bold;
+  cursor: pointer;
+  color: transparent;
+  -webkit-text-stroke: 1px #fff;
+  position: relative;
+}
+.w::after {
+  content: "Web Design";
+  position: absolute;
+  inset: 0;
+  color: pink;
+  width: 0px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.w:hover::after {
+  animation: moveText 0.5s linear both;
+}
+
+.d::after {
+  content: "Development";
+  position: absolute;
+  inset: 0;
+  color: pink;
+  width: 0px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.d:hover::after {
+  animation: moveText 0.5s linear both;
+}
+
+.i::after {
+  content: "Illustration";
+  position: absolute;
+  inset: 0;
+  color: pink;
+  width: 0px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.i:hover::after {
+  animation: moveText 0.5s linear both;
+}
+
+.p::after {
+  content: "Product Design";
+  position: absolute;
+  inset: 0;
+  color: pink;
+  width: 0px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.p:hover::after {
+  animation: moveText 0.5s linear both;
+}
+
+.s::after {
+  content: "Social Media";
+  position: absolute;
+  inset: 0;
+  color: pink;
+  width: 0px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.s:hover::after {
+  animation: moveText 0.5s linear both;
+}
+
+@keyframes moveText {
+  to {
+    width: 100%;
+  }
+}
+
+.works .right {
+  flex: 1;
+}
+
+@media only screen and (max-width: 768px) {
+  .container_works {
+    width: 100%;
+    flex-direction: column;
+  }
+  .works .left {
+    padding: 20px;
+    justify-content: center;
+  }
+  .works .left li {
+    font-size: 24px;
+    color: #fff;
+    -weblet-text-stroke: 0px;
+  }
+}
